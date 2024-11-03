@@ -1,0 +1,359 @@
+.rel-postn{position: relative;}
+.hidden{display: none;}
+.centeredDiv{
+  display: flex;  flex-flow: column nowrap;
+  justify-content: center;    align-items: center; 
+}
+body{
+  margin: 0;      padding: 0;
+  width: 100vw; min-height: 100vh;
+  background: linear-gradient(0deg, rgb(234, 239, 231), rgb(243, 238, 236), rgb(252, 251, 251))
+}
+main{padding: 1rem;   margin-top: 45px;}
+
+:root {
+  --color-heading:rgb(219, 219, 219);;
+  --color-p: rgb(219, 219, 219);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+  --margin-bottom: 2rem;
+  --color-gold: #FFC107;
+  --color-grey: #20202a; 
+  --color-dark-grey: #111115; 
+  --color-tp-grey: #18181bd3; 
+  --color-tp-dark-grey: #111115e6;
+  --color-body-bg: #272730; 
+  --color-aside-bg: #202029;
+  --color-aside-img-bg: #2a2a31;
+  --color-scroolbar: rgb(136, 136, 136);
+  --color-card-bg: #6a68687e;
+}
+
+.Dence-logo{
+  width: 5.25rem;   height: 3rem;
+}
+div.top-img{min-width: 100vw; height: 180px;}
+div.top-img img{width: 100vw; height: 180px;}
+
+header.rel-postn{
+  width: 100vw;  min-height: 55px;
+  padding: 0.5rem 1rem;   
+  box-shadow: 0 2px 5px;
+  position: fixed;    top: 0;
+  z-index: 5;
+  background-color: rgb(252, 251, 251);
+}
+.overlay {
+  z-index: 10;
+  position: absolute;    top: 0;  left: 0; 
+  min-height: 120vh;   width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.aside-content {
+  height: 100vh;
+  position: fixed;
+  width: 70vw;
+  background-color: White;
+  overflow: auto;
+  right: -30rem;
+  top: 0;
+  z-index: 12; 
+  transition: all .6s; 
+  margin-bottom: 0;
+  display: block;
+}
+.right-nav{right: 0rem;}
+
+.aside-content::-webkit-scrollbar {
+  background: transparent;
+  width: .3rem;
+  border-radius: 3rem;
+}
+.aside-content::-webkit-scrollbar-thumb {
+  background: rgb(190, 190, 190);
+  border-radius: 1rem;
+}
+
+.btn-open{
+  display: inline-block;
+  position: absolute;   right: 1.5rem;   top:1rem;
+  cursor: pointer;
+}
+.btn-close{
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  cursor: pointer; 
+}
+.btn-close:hover, .btn-open:hover {
+  transform: scale(1.2);
+}
+div.ad{
+  background: linear-gradient(0deg, rgb(245, 245, 245), rgb(227, 227, 227), rgb(190, 190, 190)) ;
+  padding: 2rem 0 1rem;
+  min-width: 100vw;    min-height: 30rem;
+}
+p.our_services{
+  font-weight: 700;   font-size: 1.2rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  align-self: flex-start;
+  margin-left: .75rem;
+}
+/*
+adP1, #adP2, #adP3{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: #2b2b37;
+  animation: rotate-text 18s infinite;
+}
+
+@keyframes rotate-text {
+  0%{content:"Step into the kitchen with confiDENCE";}
+  33.33333%{content:"Dence Kitchen and Spices";}
+  66.66667%{content:"Amazing Spices made for you";}
+  100%{content:"Step into the kitchen with confiDENCE";}
+}
+  */
+.image-rotator{
+  width: 200px;  height: 200px;
+  border: 3px solid rgb(219, 219, 219);
+  border-radius: 50%;
+  background-size: contain;   background-position: center;
+  animation: rotate-image 20s infinite;
+  margin: .5rem auto 1.5rem;
+}
+@keyframes rotate-image {
+  0%{background-image: url('./images/confi1.jpg');}
+  25%{background-image: url('./images/confi2.jpg');}
+  50%{background-image: url('./images/confi3.jpg');}
+  75%{background-image: url('./images/confi4.jpg');}
+  100%{background-image: url('./images/confi1.jpg');}
+}
+button.btn {
+  cursor: pointer;
+  margin: 1rem;
+}
+video{
+  margin: 1rem auto 1rem;
+  height: 135px;    width: 12rem;
+  border-radius: 1rem;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  border: rgb(214, 204, 205) 3px solid;
+}
+div#RtH{
+  width: 100%;
+  position: absolute; left: 0rem;   top:3rem; 
+  display: flex;      gap: 1.4rem;     flex-flow: column nowrap;   align-items: center;  justify-content: center;
+}
+button.in-header{
+  border: none;   text-align: center;
+  padding: 0.5rem;        color: var(--color-grey);      margin-top: .6rem;
+  font-size: 0.75rem;     font-family: sans-serif;     font-weight: bolder;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/* List of Products */
+#product_sample{
+  box-shadow: 3px 5px 3px var(--color-scroolbar);
+  margin: 1rem 0;   padding: .5rem;
+}
+#product_sample div.product-card{
+  margin: 1rem 0;
+  display: flex;  flex-flow: column nowrap;
+  justify-content: center;    align-items: center; 
+}
+#product_sample div.product-card div.card{
+  border: 2px solid var(--color-card-bg);
+  border-radius:0 0 .4rem .4rem;
+  box-shadow: 0 .2rem .25rem var(--color-grey);
+}
+#product_sample div.product-card h6{
+  font-size: smaller;
+}
+
+/*HorD elements*/
+.HorD{
+  text-align: center;
+  font-size:2rem; font-weight:bolder;
+  border: none;
+}
+#MayUp, #JuneUP{
+  display:none;
+}
+#MayDown, #JuneDown{
+  display:inline-block;
+}
+
+/* PROJECTS
+
+.project-item {
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+    box-shadow: 0 .25rem .25rem rgb(39, 39, 39);
+    background-color: var(--color-card-bg);
+    transition: all .5s;
+    margin-top: 3rem;
+  }
+  
+  .project-item:hover{
+    transform: scale(1.02);
+  }
+  
+  .project-image {
+    width: 5rem;   height: 5rem;
+  }
+  
+  .project-title {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .project-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 5s;
+  }
+  
+  .project-link:hover {
+    text-decoration: none;
+    transition: all 5s;
+  }
+*/
+
+footer.mainF{ border-radius:2%;
+    width:100vw; height:auto;
+    font-family:monospace;
+    margin: 2rem 0 0 0 ;
+}
+footer.mainF section.nearFooter{
+    margin:1rem auto .5rem;
+    font-size: .8rem;
+    display: flex; gap:2rem;
+    flex-wrap: wrap;  flex-direction: row;
+    list-style-type: none;
+}
+footer a:link, footer a:visited{
+    font-family: monospace;   font-size: 1.95rem;
+    text-decoration: none;  color: rgb(0, 0, 0);
+}
+footer a:hover{
+    font-family: monospace; color: rgb(0, 0, 0);
+}
+footer p.contact{
+  font-size: small;
+}
+
+#adP1{display: none;}
+@media screen and (min-width: 800px) {
+  
+  div.top-img{ z-index: inherit; min-width: 50vw; height: 200px; }
+  div.top-img img{width: 50vw; height: 200px;}
+
+  div#for-big-screen{
+    width: 100vw;
+    margin: 0;
+    background: linear-gradient(0deg, rgb(234, 239, 231), rgb(243, 238, 236), rgb(252, 251, 251))
+  }
+  video{
+    margin: 0;
+    height: 150px;    width: 13.5rem;
+    border-radius: .61rem;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    border: 1.5px solid black;
+    position: absolute;
+    top: 5rem ;   right: 1rem;
+    z-index: 2;
+  }
+  #adP1{
+    display: block;
+    margin: 2rem auto 1rem;
+    font-size: 2.5rem;  font-weight: 600;
+    font-family: cursive;
+  }
+  .aside-content {
+    height: 100vh;
+    position: fixed;
+    width: 60vw;
+    background: linear-gradient(0deg, rgb(234, 239, 231), rgb(243, 238, 236), rgb(252, 251, 251));
+    overflow: auto;
+    right: -50rem;
+    top: 0;
+    z-index: 12; 
+    transition: all .6s; 
+    margin-bottom: 0;
+    display: block;
+  }
+  .right-nav{right: 0rem;}
+  .overlay{min-height: 200vh;}
+  
+  .aside-content::-webkit-scrollbar {
+    background: transparent;
+    width: .3rem;
+    border-radius: 3rem;
+  }
+  .aside-content::-webkit-scrollbar-thumb {
+    background: rgb(190, 190, 190);
+    border-radius: 1rem;
+  }  
+}
+@media screen and (min-width: 1100px) {
+  div#for-big-screen{
+    width: 100vw;
+    margin: 0;
+    background: linear-gradient(0deg, rgb(234, 239, 231), rgb(243, 238, 236), rgb(252, 251, 251))
+  }div#for-big-screen{
+    width: 100vw;
+    margin: 0;
+    background: linear-gradient(0deg, rgb(234, 239, 231), rgb(243, 238, 236), rgb(252, 251, 251))
+  }
+  video{
+    margin: 0;
+    height: 150px;    width: 13.5rem;
+    border-radius: .61rem;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    border: 1.5px solid black;
+    position: absolute;
+    top: 5rem ;   right: 1rem;
+    z-index: 2;
+  }
+  #adP1{
+    display: block;
+    margin: 2rem auto 1rem;
+    font-size: 2.5rem;  font-weight: 600;
+    font-family: cursive;
+  }
+  .aside-content {
+    height: 100vh;
+    position: fixed;
+    width: 60vw;
+    background: linear-gradient(0deg, rgb(234, 239, 231), rgb(243, 238, 236), rgb(252, 251, 251));
+    overflow: auto;
+    right: -80rem;
+    top: 0;
+    z-index: 12; 
+    transition: all .6s; 
+    margin-bottom: 0;
+    display: block;
+  }
+  .right-nav{right: 0rem;}
+  .overlay{min-height: 200vh;}
+  
+  .aside-content::-webkit-scrollbar {
+    background: transparent;
+    width: .3rem;
+    border-radius: 3rem;
+  }
+  .aside-content::-webkit-scrollbar-thumb {
+    background: rgb(190, 190, 190);
+    border-radius: 1rem;
+  }  
+}
