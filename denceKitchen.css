@@ -46,7 +46,7 @@ header.rel-postn{
 .overlay {
   z-index: 10;
   position: absolute;    top: 0;  left: 0; 
-  min-height: 120vh;   width: 100%;
+  min-height: 600vh;   width: 100%;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -345,7 +345,7 @@ footer p.contact{
     display: block;
   }
   .right-nav{right: 0rem;}
-  .overlay{min-height: 200vh;}
+  .overlay{min-height: 600vh;}
   
   .aside-content::-webkit-scrollbar {
     background: transparent;
