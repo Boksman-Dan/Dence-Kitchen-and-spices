@@ -17,7 +17,6 @@ setTimeout(() => {
     document.getElementById("dence-vid1").classList.remove('hidden')
 }, 5000);
 
-
 function dropMay(){
   //document.getElementById("Row2").style.display="block";
   document.getElementById("Row2").classList.remove("hidden");
@@ -32,8 +31,6 @@ function hideMay(){
 }
 
 
-
-
 // GET THE HTML ELEMENTS
 const btnOpenEl = document.querySelector('.btn-open');
 const btnCloseEl = document.querySelector('.btn-close');
@@ -45,7 +42,6 @@ const overlayEl = document.querySelector('.overlay');
 
 
 // FUNCTION TO OPEN AND CLOSE SIDE CONTENT
-
 const openSideContent = function () {
   asideContentEl.classList.add('right-nav');
   overlayEl.classList.remove('hidden');
@@ -60,6 +56,39 @@ const closeSideContent = function () {
 btnOpenEl.addEventListener('click', openSideContent);
 overlayEl.addEventListener('click', closeSideContent);
 btnCloseEl.addEventListener('click', closeSideContent);
+
+// prices of items
+let priceOfCurryPowder = 1700; 
+let priceOfAllPurposeSpice =1700;
+let priceOfJollofSpice = 1700;
+let priceOfSuyaSpice = 1700;
+let priceOfGarlicPowder = 1700;
+let priceOfGingerPowder = 2000;
+let priceOfPepperSoupMix = 2000;
+
+//display the prices of items in html
+document.getElementById("priceOfCurryPowder").textContent =`N${priceOfCurryPowder}`;
+document.getElementById("priceOfAllPurposeSpice").textContent =`N${priceOfAllPurposeSpice}`;
+document.getElementById("priceOfJollofSpice").textContent =`N${priceOfJollofSpice}`;
+document.getElementById("priceOfSuyaSpice").textContent =`N${priceOfSuyaSpice}`;
+document.getElementById("priceOfGarlicPowder").textContent =`N${priceOfGarlicPowder}`;
+document.getElementById("priceOfGingerPowder").textContent =`N${priceOfGingerPowder}`;
+document.getElementById("priceOfPepperSoupMix").textContent =`N${priceOfPepperSoupMix}`;
+
+/*
+//add to cart logic
+let shoppingCart = [];
+
+function addItemToCart() {    //each button suppose dey push(the value of a price var to our array)
+  shoppingCart.push(priceOfCurryPowder);
+  document.getElementById("cart").innerHTML = shoppingCart
+}
+const cartBtns = document.querySelectorAll(".cart_btn");
+for (let cartBtn = 0; cartBtn < cartBtns.length; cartBtn++) {
+  const element = cartBtns[cartBtn];
+  element.addEventListener("click", addItemToCart)  
+}
+
 
 /*
 // GET THE CURRENT TIME AND DAY

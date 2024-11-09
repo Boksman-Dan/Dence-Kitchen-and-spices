@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/Dence-logo.png" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../denceKitchen.css">
+    <title>Shop At Dence Kitchen</title>
+</head> 
+<body>
+    <!--
+        1. arrange all sellable items in a grid
+        2. attach prices and add to cart
+        3. make it such that the price and item can be viewed and removed if need be
+        4. then the main thing is to make the webpage communicate with the business owner
+    -->
+    <div class="overlay hidden"></div>
+    <aside class="rel-postn aside-content">
+        <img src="../assets/icon-close-menu.svg" class="btn-close" alt="X">
+        <div id="RtH">
+            <a href="./About-DenceKitchen.html" target="_blank">
+                <button class="in-header ">About</button>
+            </a>
+            <a href="../index.html" target="_blank">
+                <button class="in-header ">Homepage</button>
+            </a>
+            <a target="_blank" href="./shopping-Page.html">
+                <button type="button" class="btn btn-dark">   SHOP NOW   </button>
+            </a>
+        </div>
+    </aside>
+    <div id="for-big-screen">
+        <header class="rel-postn">
+            <img src="../images/Dence-logo.png" alt="Dence Kitchen Logo" class="Dence-logo">
+            <i class="fa-solid fa-bars btn-open"></i>
+        </header>
+
+        <main class="centeredDiv">
+            
+            <div class="topmost ad rel-postn centeredDiv">
+                <p class="our_services">
+                    Food delivery <br>and catering service... <br> Natural Spices and seasoning hub...
+                </p>
+                <br/>
+            </div>
+
+            <div id="cart" class="ordered_goods"></div>
+
+            <section id="product_sample">
+                <h5 style="text-align: left;">Available Now... </h5>
+
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col product-card">
+                            <div class="card" style="width: 8rem;">
+                                <img src="../images/Confi-WA0022 (19).jpg" alt="Curry Powder" class="card-img-top" >
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        Curry Powder<br>
+                                        <p class="price_of_items" id="priceOfCurryPowder"></p>
+                                    </h6>
+                                </div>
+                            </div>
+                            <a target="_blank" href="https://wa.me/2347036473141?text=Hello%2C%20I%27d%20like%20to%20purchase%20Curry%20Powder">
+                                <button style="width: 8rem;" type="button" class="btn cart_btn btn-dark">Place Order</button>
+                            </a>
+                        </div>
+                        <div class="col product-card">
+                            <div class="card" style="width: 8rem;">
+                                <img src="../images/Confi-WA0022 (16).jpg" alt="Ginger Powder" class="card-img-top" >
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        Ginger Powder<br>
+                                        <p class="price_of_items" id="priceOfGingerPowder"></p>
+                                    </h6>
+                                </div>
+                            </div>
+                            <a target="_blank" href="https://wa.me/2347036473141?text=Hello%2C%20I%27d%20like%20to%20purchase%20Ginger%20Powder">
+                                <button style="width: 8rem;" type="button" class="btn cart_btn btn-dark">Place Order</button>
+                            </a>
+                        </div>
+                        <div class="col product-card">
+                            <div class="card" style="width: 8rem;">
+                                <img src="../images/Confi-WA0022 (5).jpg" alt="Jollof Spice" class="card-img-top" >
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        Jollof Spice<br>
+                                        <p class="price_of_items" id="priceOfJollofSpice"></p>
+                                    </h6>
+                                </div>
+                            </div>
+                            <a target="_blank" href="https://wa.me/2347036473141?text=Hello%2C%20I%27d%20like%20to%20purchase%20Jollof%20Spice">
+                                <button style="width: 8rem;" type="button" class="btn cart_btn btn-dark">Place Order</button>
+                            </a>
+                        </div>
+                        <div class="col product-card">
+                            <div class="card" style="width: 8rem;">
+                                <img src="../images/Confi-WA0022 (11).jpg" alt="Suya Spice" class="card-img-top" >
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        Suya Spice<br>
+                                        <p class="price_of_items" id="priceOfSuyaSpice"></p>
+                                    </h6>
+                                </div>
+                            </div>
+                            <a target="_blank" href="https://wa.me/2347036473141?text=Hello%2C%20I%27d%20like%20to%20purchase%20Suya%20Spice">
+                                <button style="width: 8rem;" type="button" class="btn cart_btn btn-dark">Place Order</button>
+                            </a>
+                        </div>
+                        <div class="col product-card">
+                            <div class="card" style="width: 8rem;">
+                                <img src="../images/Confi-WA0022 (18).jpg" alt="Pepper Soup Mix" class="card-img-top" >
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        Pepper Soup Mix<br>
+                                        <p class="price_of_items" id="priceOfPepperSoupMix"></p>
+                                    </h6>
+                                </div>
+                            </div>
+                            <a target="_blank" href="https://wa.me/2347036473141?text=Hello%2C%20I%27d%20like%20to%20purchase%20Pepper%20Soup%20Mix">
+                                <button style="width: 8rem;" type="button" class="btn cart_btn btn-dark">Place Order</button>
+                            </a>
+                        </div>
+                        <div class="col product-card">
+                            <div class="card" style="width: 8rem;">
+                                <img src="../images/Confi-WA0022 (3).jpg" alt="All Purpose Spice" class="card-img-top" >
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        All Purpose Spice<br>
+                                        <p class="price_of_items" id="priceOfAllPurposeSpice"></p>
+                                    </h6>
+                                </div>
+                            </div>
+                            <a target="_blank" href="https://wa.me/2347036473141?text=Hello%2C%20I%27d%20like%20to%20purchase%20All%20Purpose%20Spice">
+                                <button style="width: 8rem;" type="button" class="btn cart_btn btn-dark">Place Order</button>
+                            </a>
+                        </div>
+                        <div class="col product-card">
+                            <div class="card" style="width: 8rem;">
+                                <img src="../images/Confi-WA0022 (6).jpg" alt="Garlic Powder" class="card-img-top" >
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        Garlic Powder<br>
+                                        <p class="price_of_items" id="priceOfGarlicPowder"></p>
+                                    </h6>
+                                </div>
+                            </div>
+                            <a target="_blank" href="https://wa.me/2347036473141?text=Hello%2C%20I%27d%20like%20to%20purchase%20Garlic%20Powder">
+                                <button style="width: 8rem;" type="button" class="btn cart_btn btn-dark">Place Order</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                  
+            </section>
+
+        </main>
+
+        <footer class="centeredDiv mainF">
+            <div class="copyright">
+                <section class="nearFooter">
+                    <a target="_blank" href="https://wa.me/+2347036473141">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100071543970579&mibextid=ZbWKwL">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/dence_kitchen?igsh=bzU4M3oxa2Jtczh3">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </section>
+            </div>
+            <p class="contact">DENCE KITCHEN ©2024</p>
+            <br>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../denceKitchen.js"></script>
+</body>
+</html>

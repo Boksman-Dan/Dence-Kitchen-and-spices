@@ -93,7 +93,7 @@ header.rel-postn{
 div.ad{
   background: linear-gradient(0deg, rgb(245, 245, 245), rgb(227, 227, 227), rgb(190, 190, 190)) ;
   padding: 2rem 0 1rem;
-  min-width: 100vw;    min-height: 30rem;
+  min-width: 100vw;    min-height: auto;
 }
 p.our_services{
   font-weight: 700;   font-size: 1.2rem;
@@ -137,6 +137,9 @@ button.btn {
   cursor: pointer;
   margin: 1rem;
 }
+button.cart_btn{
+  font-size: .75rem;    margin: .35rem;
+}
 video{
   margin: 1rem auto 1rem;
   height: 135px;    width: 12rem;
@@ -170,11 +173,14 @@ button.in-header{
 }
 #product_sample div.product-card div.card{
   border: 2px solid var(--color-card-bg);
-  border-radius:0 0 .4rem .4rem;
   box-shadow: 0 .2rem .25rem var(--color-grey);
 }
-#product_sample div.product-card h6{
+#product_sample div.product-card h6.card-title{
   font-size: smaller;
+}
+#product_sample div.product-card .price_of_items{
+  margin: .25rem 0;
+  font-weight: 800;
 }
 
 /*HorD elements*/
