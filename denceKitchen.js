@@ -17,6 +17,7 @@ setTimeout(() => {
     document.getElementById("dence-vid1").classList.remove('hidden')
 }, 5000);
 
+//drop and hide items for sale
 function dropMay(){
   //document.getElementById("Row2").style.display="block";
   document.getElementById("Row2").classList.remove("hidden");
@@ -65,6 +66,10 @@ let priceOfSuyaSpice = 1700;
 let priceOfGarlicPowder = 1700;
 let priceOfGingerPowder = 2000;
 let priceOfPepperSoupMix = 2000;
+let priceOfChickenSazon = 2500;
+let priceOfPaprika = 3000;
+let priceOfPinkSalt = 2500;
+let priceOfOregano = 3000;
 
 //display the prices of items in html
 document.getElementById("priceOfCurryPowder").textContent =`N${priceOfCurryPowder}`;
@@ -74,6 +79,16 @@ document.getElementById("priceOfSuyaSpice").textContent =`N${priceOfSuyaSpice}`;
 document.getElementById("priceOfGarlicPowder").textContent =`N${priceOfGarlicPowder}`;
 document.getElementById("priceOfGingerPowder").textContent =`N${priceOfGingerPowder}`;
 document.getElementById("priceOfPepperSoupMix").textContent =`N${priceOfPepperSoupMix}`;
+document.getElementById("priceOfChickenSazon").textContent =`N${priceOfChickenSazon}`;
+document.getElementById("priceOfPaprika").textContent =`N${priceOfPaprika}`;
+document.getElementById("priceOfPinkSalt").textContent =`N${priceOfPinkSalt}`;
+document.getElementById("priceOfOregano").textContent =`N${priceOfOregano}`;
+
+
+
+
+
+
 
 /*
 //add to cart logic
