@@ -59,36 +59,23 @@ overlayEl.addEventListener('click', closeSideContent);
 btnCloseEl.addEventListener('click', closeSideContent);
 
 // prices of items
-let priceOfCurryPowder = 1700; 
-let priceOfAllPurposeSpice =1700;
-let priceOfJollofSpice = 1700;
-let priceOfSuyaSpice = 1700;
-let priceOfGarlicPowder = 1700;
-let priceOfGingerPowder = 2000;
-let priceOfPepperSoupMix = 2000;
-let priceOfChickenSazon = 2500;
-let priceOfPaprika = 3000;
-let priceOfPinkSalt = 2500;
-let priceOfOregano = 3000;
-
+const pricesOfItems = {
+  priceOfCurryPowder: 1700,
+  priceOfAllPurposeSpice: 1700,
+  priceOfJollofSpice: 1700,
+  priceOfSuyaSpice: 1700,
+  priceOfGarlicPowder: 1700,
+  priceOfGingerPowder: 2000,
+  priceOfPepperSoupMix: 2000,
+  priceOfChickenSazon: 2500,
+  priceOfPaprika: 3000,
+  priceOfPinkSalt: 2500,
+  priceOfOregano: 3000,
+};
 //display the prices of items in html
-document.getElementById("priceOfCurryPowder").textContent =`N${priceOfCurryPowder}`;
-document.getElementById("priceOfAllPurposeSpice").textContent =`N${priceOfAllPurposeSpice}`;
-document.getElementById("priceOfJollofSpice").textContent =`N${priceOfJollofSpice}`;
-document.getElementById("priceOfSuyaSpice").textContent =`N${priceOfSuyaSpice}`;
-document.getElementById("priceOfGarlicPowder").textContent =`N${priceOfGarlicPowder}`;
-document.getElementById("priceOfGingerPowder").textContent =`N${priceOfGingerPowder}`;
-document.getElementById("priceOfPepperSoupMix").textContent =`N${priceOfPepperSoupMix}`;
-document.getElementById("priceOfChickenSazon").textContent =`N${priceOfChickenSazon}`;
-document.getElementById("priceOfPaprika").textContent =`N${priceOfPaprika}`;
-document.getElementById("priceOfPinkSalt").textContent =`N${priceOfPinkSalt}`;
-document.getElementById("priceOfOregano").textContent =`N${priceOfOregano}`;
-
-
-
-
-
-
+Object.entries(pricesOfItems).forEach(([id, price]) => {
+  document.getElementById(id).textContent = `N${price}`;
+});
 
 /*
 //add to cart logic
@@ -103,7 +90,6 @@ for (let cartBtn = 0; cartBtn < cartBtns.length; cartBtn++) {
   const element = cartBtns[cartBtn];
   element.addEventListener("click", addItemToCart)  
 }
-
 
 /*
 // GET THE CURRENT TIME AND DAY
